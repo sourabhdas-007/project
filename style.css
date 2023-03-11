@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+
+*{
+  /* font-family: 'Poppins', sans-serif; */
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+header{
+  background-color: rgb(0, 0, 0);
+  color: greenyellow;
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+ /* margin: 0 50px 0 50px; */
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+ 
+}
+ul li{
+  margin: 15px 15px 0 15px;
+   font-family: 'Orbitron', sans-serif;
+}
+.logo{
+  margin: 5px 25px 0px 25px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.title{
+  margin: 8px 5px 0px 0px;
+  
+ 
+  }
+
+  a{
+    text-decoration: none;
+    color: greenyellow;
+    padding: 5px;
+  }
+
+  .sign{
+    width: 140px;
+    height: 50px;
+    margin-top: 0px;
+    margin-left: 292px;
+    font-size: 20px;
+    background-color: greenyellow;
+    color: black;
+    /* font-family: 'Teko', sans-serif; */
+    font-family: 'Orbitron', sans-serif;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#signin{
+  color: black;
+}
+
+#main:hover{
+  font-weight: 200;
+  color: rgb(255, 255, 255);
+  /* background-color: grey;
+  padding: 5px;
+  border-radius: 3px; */
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 25px 0px 25px;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  /* background: linear-gradient(145deg, #1c1818 60%, #383838 40.1%); */
+  /* background: rgb(32, 28, 28); */
+  /* background-image: url("world\ map.jpg"); */
+  background-image: url(world\ map\ new.jpg);
+  background-size: cover;
+  /* border : 3px solid greenyellow; */
+}
+
+.container form{
+  padding:20px;
+  width:650px;
+  color: white;
+  background: black;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  border : 3px solid greenyellow;
+  
+
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+  font-size: large;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: -2px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.container form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: green;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.container form .submit-btn:hover{
+  background:rgb(152, 228, 38);
+  color: #000;
+}
+
+

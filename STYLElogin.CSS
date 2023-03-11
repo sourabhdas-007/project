@@ -1,0 +1,431 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* font-family: 'poppins',sans-serif; */
+}
+
+
+ body{
+    display: flex;
+    /* justify-content:0 ; */
+    align-items:0;
+    /* min-height: 100vh; */
+    /* background-color:#000000 ;  */
+    background-image: url("world\ map\ new.jpg");
+    background-size: cover;
+    /* background-position: center;  */
+    width: 100%;
+}
+
+
+header {
+ position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 0px 5px;
+background: #000000;
+display: flex;
+/* justify-content: space-between; */
+align-items: center;
+z-index: 99;
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: #7ac32c solid 2px;
+
+}
+
+.navimg #whitelogo{
+    padding-left: 10px;
+margin-bottom: 4px;
+    
+}
+
+
+ .logo{
+    font-size:2em ;
+    color: white;
+    user-select: none;
+}
+
+
+.navigation{
+    padding-left: 336px;
+}
+
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+}
+/* .navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -6px ; 
+    
+    width: 100%;
+    height: 3px;
+    background: white;
+   
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+ }
+.navigation a:hover::after{
+    transform: scaleX(1);
+} */
+
+.navigation a:hover{
+    color: aliceblue;
+}
+
+
+
+  .navigation .btnLogin-popup {
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid greenyellow;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: greenyellow;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+
+} 
+.navigation .btnLogin-popup:hover{
+    background: greenyellow;
+    color: black;
+} 
+
+
+
+
+
+.navigation .purchase-popup {
+    width: 200px;
+    height: 50px;
+    background: transparent;
+    border: 2px #2C3333;
+    outline: none;
+    border-radius: 0px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-left: 40px;
+    transition: .5s;
+    text-shadow: 0px 0px 15px #000000;
+    white-space: nowrap;
+    font-weight: 700;
+    background:#7ac32c;
+    color: #d2d4cd;
+}
+.navigation .purchase-popup:hover{
+    color: black;
+}
+
+
+
+
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: black;
+    color: white;
+    border: 3px solid greenyellow;
+    border-radius: 0px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(31, 37, 30, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 270px;
+    /* margin-bottom: 150px; */
+    margin-left: -930px;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform .5s ease, height .2s ease;
+    font-family: 'poppins',sans-serif;
+
+
+}
+.wrapper.active-popup{
+
+    transform: scale(1);
+}
+.wrapper .active {
+
+    height: 520px;
+}
+
+
+
+
+.wrapper .form-box {
+
+    width: 100%;
+    padding: 40px;
+}
+
+
+
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+
+
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+
+
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+
+
+.wrapper .icon-close{
+    position: absolute;
+    top: 0;
+right: 0;
+width: 45px;
+height: 45px;
+background: greenyellow;
+font-size: 2em;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom-left-radius:0px;
+cursor: pointer;
+z-index: 1;
+
+}
+
+
+
+.form-box h2 {
+    font-size: 2em;
+    color: greenyellow;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+
+.input-box{
+    position: relative;
+    width: 90%;
+    height: 50px;
+border-bottom: 2px solid greenyellow;
+margin:30px;
+    
+}
+
+
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+left: 5px;
+transform: translateY(-50%);
+font-weight: 500;
+pointer-events: none;
+transition: -5s;
+}
+
+
+
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+
+}
+
+
+
+
+
+.input-box input {
+    width:100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: greenyellow;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+
+
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: greenyellow;
+    line-height: 57px;
+}
+
+
+
+
+.remember-forget{
+    font-size: .9em;
+    color: greenyellow;
+    font-weight: 500px;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+.remember-forget label input{
+    accent-color: greenyellow;
+    margin-right: 3px;
+}
+
+
+
+
+.remember-forget a {
+    color: greenyellow;
+    text-decoration: none;
+
+}
+
+
+.remember-forget a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: greenyellow;
+    border: none;
+    outline: none;
+    border-radius:6px ;
+    cursor: pointer;
+    font-size: 1em;
+    color: black ;
+    font-weight: 500;
+
+}
+
+
+
+.login-register {
+    font-size: .9em;
+    color: greenyellow;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+
+
+.login-register p a {
+    color: greenyellow;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+.login-register p a:hover{
+    text-decoration: underline;
+
+}
+
+
+
+/* .first{
+    color: white;
+    text-align: center;
+     margin-top:100px;
+     margin-left: 400px;
+
+} */
+
+
+
+
+/* .cod{
+    color: white;
+    font-size: 100px;
+   text-align: center;
+   margin-top: 150px;
+   margin-left: -550px;
+ 
+
+}
+ */
+
+  .intro{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: -30px;
+    padding: 0px;
+
+  }
+
+  .top{
+    margin: 0px;
+    text-align: center;
+    color: white;
+    margin: 120px 0px 15px 0px;
+  }
+
+  .cod{
+    display: flex;
+    justify-content: center;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
